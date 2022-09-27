@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMMA&ITA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- JS -->
+    <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/layout.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <a style="position: absolute; top: 10px; left: 10px; padding: 15px" class="btn--default modal-open" href="#sms-template">모달 예시</a>
+
+      <div id="sms-template" class="modal">
+        <div class="container">
+          <a href="#" title="Close" class="close modal-close"></a>
+          <p class="modal-title">문자메시지 템플릿</p>
+          <div class="table-top">
+            <div class="table-top__count">총<strong>26,317개</strong></div>
+            <div class="table-top__search">
+              <select name="유형선택">
+                <option value="">유형전체</option>
+                <option value="">SMS</option>
+                <option value="">LMS</option>
+                <option value="">MMS</option>
+              </select>
+              <span>
+                <input type="text" class="input_hidden" placeholder="템플릿명 검색" />
+                <button type="button"></button>
+              </span>
+            </div>
+          </div>
+          <section class="table-wrap">
+            <table>
+              <colgroup>
+                <col style="width: 85px" />
+                <col style="width: 70px" />
+                <col style="width: 230px" />
+                <col style="width: auto" />
+                <col style="width: 130px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </th>
+                  <th scope="col">유형</th>
+                  <th scope="col">템플릿명</th>
+                  <th scope="col">내용</th>
+                  <th scope="col">등록일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" checked />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>SMS</td>
+                  <td><div class="subject">아디다스 윈터 캠페인_20211225</div></td>
+                  <td>
+                    <div class="detail">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>LMS</td>
+                  <!--📌 DEV Check(6) : subject(제목) 두줄이면 detail(내용)에 class="detail__maxlength" 추가  -->
+                  <td><div class="subject">아디다스 윈터 캠페인 아디다스 윈터 캠페인 아디다스 윈터 캠</div></td>
+                  <td>
+                    <div class="detail detail__maxlength">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>MMS</td>
+                  <td><div class="subject">아디다스 윈터 캠페인_20211225</div></td>
+                  <td>
+                    <div class="detail">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>SMS</td>
+                  <td><div class="subject">아디다스 윈터 캠페인_20211225</div></td>
+                  <td>
+                    <div class="detail">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>LMS</td>
+                  <td><div class="subject">아디다스 윈터 캠페인_20211225</div></td>
+                  <td>
+                    <div class="detail">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>MMS</td>
+                  <td><div class="subject">아디다스 윈터 캠페인_20211225</div></td>
+                  <td>
+                    <div class="detail">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>SMS</td>
+                  <td><div class="subject">아디다스 윈터 캠페인_20211225</div></td>
+                  <td>
+                    <div class="detail">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>LMS</td>
+                  <td><div class="subject">아디다스 윈터 캠페인_20211225</div></td>
+                  <td>
+                    <div class="detail">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>MMS</td>
+                  <td><div class="subject">아디다스 윈터 캠페인_20211225</div></td>
+                  <td>
+                    <div class="detail">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="control control--checkbox">
+                      <input type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </td>
+                  <td>MMS</td>
+                  <td><div class="subject">아디다스 윈터 캠페인_20211225</div></td>
+                  <td>
+                    <div class="detail">
+                      아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제 시작합니다 아디다스 윈터 캠페인 이제
+                      시작합니다
+                    </div>
+                  </td>
+                  <td>2021-12-26</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <div class="table-bottom">
+            <button type="button" class="table-bottom__negative">삭제</button>
+            <div class="table-pagination">
+              <ul>
+                <!--📌 DEV Check(7) : arrow 비활성화 class="table-pagination__arrow--disable" 추가 -->
+                <li class="table-pagination__first table-pagination__arrow--disable">
+                  <a href="javascript:;"></a>
+                </li>
+                <li class="table-pagination__prev table-pagination__arrow--disable">
+                  <a href="javascript:;"></a>
+                </li>
+                <!--📌 DEV Check(8) : pagination active 됐을 때, li class="table-pagination--active" 추가 -->
+                <li class="table-pagination--active">
+                  <a href="javascript:;">01</a>
+                </li>
+                <li>
+                  <a href="javascript:;">02</a>
+                </li>
+                <li>
+                  <a href="javascript:;">03</a>
+                </li>
+                <li>
+                  <a href="javascript:;">04</a>
+                </li>
+                <li>
+                  <a href="javascript:;">05</a>
+                </li>
+                <li class="table-pagination__next">
+                  <a href="javascript:;"></a>
+                </li>
+                <li class="table-pagination__last">
+                  <a href="javascript:;"></a>
+                </li>
+              </ul>
+            </div>
+            <button type="button" class="table-bottom__confirm">등록</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <strong>문자/카카오<br />메시지</strong>
+        <p>Version 0.0.1</p>
+        <nav>
+          <a href="javascript:;" class="nav__text1 nav__text--active"><i></i><span>문자메시지</span></a>
+          <a href="javascript:;" class="nav__text2"><i></i><span>친구톡</span></a>
+          <a href="javascript:;" class="nav__text3"><i></i><span>알림톡</span></a>
+          <a href="javascript:;" class="nav__text4"><i></i><span>예약현황</span></a>
+          <a href="javascript:;" class="nav__text5"><i></i><span>발송결과</span></a>
+          <div class="language">
+            <p>언어선택</p>
+            <select name="언어선택">
+              <option value="">국문</option>
+              <option value="">영문</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>

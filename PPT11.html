@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMMA&ITA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- JS -->
+    <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/layout.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <a style="position: absolute; top: 10px; left: 10px; padding: 15px" class="btn--default modal-open" href="#open-modal-info">모달 예시</a>
+
+      <div id="open-modal-info" class="modal modal-window">
+        <div class="modal-wrap modal-wrap-cont">
+          <a href="#" title="Close" class="close modal-close"></a>
+          <h1 class="modal-wrap__Mtit">야간발송안내</h1>
+          <div class="modal-wrap__cont-wrap">
+            야간 시간 광고성 정보 전송에 대한 별도의 동의를 받지 않고 오후 9시부터 그 다음 날 오전 8시 사이에 광고성 정보를 전송한 자 뿐만 아니라 그러한 행위를
+            하도록 한자의 경우에는 3천만원 이하의 과태료가 부과됩니다.<br /><br />
+            (정보통신망법 제 76조 제1항 제7호)
+          </div>
+          <div class="modal-wrap__btn">
+            <button class="modal-wrap__btn--yes modal-close">확인</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <strong>문자/카카오<br />메시지</strong>
+        <p>Version 0.0.1</p>
+        <nav>
+          <a href="javascript:;" class="nav__text1 nav__text--active"><i></i><span>문자메시지</span></a>
+          <a href="javascript:;" class="nav__text2"><i></i><span>친구톡</span></a>
+          <a href="javascript:;" class="nav__text3"><i></i><span>알림톡</span></a>
+          <a href="javascript:;" class="nav__text4"><i></i><span>예약현황</span></a>
+          <a href="javascript:;" class="nav__text5"><i></i><span>발송결과</span></a>
+          <div class="language">
+            <p>언어선택</p>
+            <select name="언어선택">
+              <option value="">국문</option>
+              <option value="">영문</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>

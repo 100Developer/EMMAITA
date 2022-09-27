@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMMA&ITA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- JS -->
+    <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/layout.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <a style="position: absolute; top: 10px; left: 10px; padding: 15px" class="btn--default modal-open" href="#open-noticetalk">모달 예시</a>
+
+      <div id="open-noticetalk" class="modal">
+        <div class="container pagetype">
+          <a href="#" title="Close" class="close modal-close"></a>
+          <div class="content content--active">
+            <div class="title-number">
+              <p>알림톡</p>
+            </div>
+            <div class="select-wrap">
+              <div class="select-wrap__select">
+                <label for="">발신 프로필</label>
+                <select name="발신 프로필" disabled>
+                  <option value="">@아이투맥스</option>
+                  <option value="">@아이투맥스</option>
+                </select>
+              </div>
+              <div class="select-wrap__select">
+                <label for="">부서</label>
+                <select name="부서">
+                  <option value="">정보관리팀</option>
+                  <option value="">정보관리팀</option>
+                </select>
+              </div>
+            </div>
+            <div class="select-wrap row-2">
+              <div class="select-wrap__select">
+                <label for="">수신번호</label>
+                <select name="수신번호">
+                  <option value="">선택</option>
+                  <option value="">010-1234-1333</option>
+                </select>
+              </div>
+              <div class="select-wrap__select">
+                <label for="">부가정보</label>
+                <select name="부가정보">
+                  <option value="">선택</option>
+                  <option value="">부가정보2</option>
+                </select>
+              </div>
+            </div>
+            <p class="section-title">메시지 설정</p>
+            <div class="tab__switch">
+              <span>광고성 여부</span>
+              <label><input type="checkbox" /><i></i></label>
+            </div>
+            <section>
+              <div class="tab__textarea">
+                <textarea placeholder="템플릿을 불러오면 내용이 입력됩니다." disabled></textarea>
+              </div>
+              <div class="tab__btn">
+                <div class="tab__btn__left"></div>
+                <div class="tab__btn__right">
+                  <button type="button" class="tab__btn--load-message"><i></i>메시지 불러오기</button>
+                  <button type="button" class="tab__btn--search"><i></i>버튼 설정/조회</button>
+                </div>
+              </div>
+            </section>
+            <div class="talk-setting">
+              <p>보안 템플릿 설정<span>*모바일에서만 내용을 볼 수 있습니다</span></p>
+              <button type="button" class="talk-setting__template">
+                <i></i>
+                <em>사용함</em>
+                <span>사용안함</span>
+              </button>
+            </div>
+            <div class="talk-setting">
+              <p>상담톡 채널 옵션 기능<span class="talk-setting__text">*알림톡 하단에 슬라이드 형태로 버튼 노출, 바로 연결 기능 사용이 가능합니다</span></p>
+              <button type="button" class="talk-setting__option">
+                <i></i>
+                <em>바로연결 보기</em>
+                <span>사용안함</span>
+              </button>
+            </div>
+            <section class="select">
+              <p class="section-title">고객 설정<span>*템플릿에 등록되어 있는 변수를 변경할 수 있습니다</span></p>
+              <div class="select-wrap customer-setting">
+                <div class="select-wrap__select">
+                  <label for="">고객명</label>
+                  <select name="고객명">
+                    <option value="">선택</option>
+                    <option value="">고객명</option>
+                  </select>
+                </div>
+                <div class="select-wrap__select">
+                  <label for="">이름</label>
+                  <select name="이름">
+                    <option value="">선택</option>
+                    <option value="">이름</option>
+                  </select>
+                </div>
+                <div class="select-wrap__select">
+                  <label for="">ID</label>
+                  <select name="ID">
+                    <option value="">선택</option>
+                    <option value="">asdfgqwer</option>
+                  </select>
+                </div>
+                <div class="select-wrap__select">
+                  <label for="">배송</label>
+                  <select name="배송">
+                    <option value="">선택</option>
+                    <option value="">배송</option>
+                  </select>
+                </div>
+                <div class="select-wrap__select">
+                  <label for="">value</label>
+                  <select name="value">
+                    <option value="">선택</option>
+                    <option value="">option</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+            <div class="send">
+              <div class="send__type">
+                <p>대체발송</p>
+                <div class="send__type__radio">
+                  <input type="radio" name="send" id="sendNo" checked />
+                  <label for="sendNo">발송안함</label>
+                  <i></i>
+                </div>
+                <div class="send__type__radio">
+                  <input type="radio" name="send" id="sendYes" />
+                  <label for="sendYes">발송함</label>
+                  <i></i>
+                </div>
+              </div>
+            </div>
+            <div class="switch">
+              <p>발송시점</p>
+              <div class="switch__radio">
+                <input type="radio" id="yes" name="switch" checked />
+                <label for="yes">즉시</label>
+                <input type="radio" id="no" name="switch" />
+                <label for="no">예약</label>
+                <i></i>
+              </div>
+            </div>
+            <div class="datepicker">
+              <i></i>
+              <div class="datepicker__inputDate">
+                <input type="date" id="" name="" />
+              </div>
+              <div class="datepicker__input datepicker__input--hour">
+                <input type="number" step="1" value="1" id="" name="" />
+                <a href="javascript:;" class="datepicker__input--btnUp"></a>
+                <a href="javascript:;" class="datepicker__input--btnDn"></a>
+              </div>
+              <div class="datepicker__input datepicker__input--minute">
+                <input type="number" step="1" value="1" id="" name="" />
+                <a href="javascript:;" class="datepicker__input--btnUp"></a>
+                <a href="javascript:;" class="datepicker__input--btnDn"></a>
+              </div>
+            </div>
+            <div class="send send-display">
+              <div class="send__type">
+                <p>테스트 발송</p>
+                <span>* 테스트 완료 후 '발송안함'을 클릭 후 최종 발송하면 됩니다.</span>
+                <div class="send__type__radio">
+                  <input type="radio" name="send2" id="sendNo2" checked />
+                  <label for="sendNo2">발송안함</label>
+                  <i></i>
+                </div>
+                <div class="send__type__radio">
+                  <input type="radio" name="send2" id="sendYes2" />
+                  <label for="sendYes2">발송함</label>
+                  <i></i>
+                </div>
+              </div>
+            </div>
+            <div class="cont-btn">
+              <button type="button" class="cont-btn__negative">취소</button>
+              <button type="button" class="cont-btn__confirm">확인</button>
+            </div>
+          </div>
+
+          <div class="preview">
+            <div class="preview-tab">
+              <a href="javascript:;" data-type="tab_4" class="preview-tab__item tab__item--active">미리보기</a>
+              <a href="javascript:;" data-type="tab_5" class="">대체발송</a>
+            </div>
+            <div id="tab_4" class="preview-talk preview-talk--active">
+              <div class="preview-inner mockup-scroll">
+                <!-- 알림톡 메시지 유형 - 기본형 -->
+                <div class="preview-message preview-message--active">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+
+                      소중한 주문이 접수완료 되었습니다.<br /><br />
+
+                      ▶구문일자 : 2021.05.01(토) 11:55<br />
+                      ▶금액 : 12,000원<br />
+                      ▶주문번호 : <a href="javascript:;">20210323-0002157</a>
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button" class="preview-message__button--channel"><span></span>채널추가</button>
+                    <button type="button">홈페이지 바로가기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 기본형 -->
+
+                <!-- 알림톡 메시지 유형 - 부가정보형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+
+                      소중한 주문이 접수완료 되었습니다.<br /><br />
+
+                      -구문일자 : 2021.05.01(토) 11:55<br />
+                      -금액 : 12,000원<br />
+                      -주문번호 : <a href="javascript:;">20210323-0002157</a>
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.<br />
+                      고객센터 : <a href="tel:02-1234-1234">02-1234-1234</a>
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">홈페이지 바로가기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 부가정보형 -->
+
+                <!-- 알림톡 메시지 유형 - 광고추가형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+
+                      소중한 주문이 접수완료 되었습니다.<br /><br />
+
+                      ▶구문일자 : 2021.05.01(토) 11:55<br />
+                      ▶금액 : 12,000원<br />
+                      ▶주문번호 : <a href="javascript:;">20210323-0002157</a>
+                    </div>
+                    <div class="preview-message__inner-cont advertising">
+                      아이투맥스의 광고와 마케팅 메시지를 카카오 톡으로 받아 볼 수 있습니다<br />
+                      고객센터 : <a href="tel:02-1234-1234">02-1234-1234</a>
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">광고성 메시지 수신동의</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 광고추가형 -->
+
+                <!-- 알림톡 메시지 유형 - 복합형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+
+                      소중한 주문이 접수완료 되었습니다.<br /><br />
+
+                      ▶구문일자 : 2021.05.01(토) 11:55<br />
+                      ▶금액 : 12,000원<br />
+                      ▶주문번호 : <a href="javascript:;">20210323-0002157</a>
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.<br />
+                      고객센터 : <a href="tel:02-1234-1234">02-1234-1234</a>
+                    </div>
+                    <div class="preview-message__inner-cont advertising">아래버튼을 누르시면 모바일 명세서 수신 고객대상 이벤트 페이지로 이동합니다.<br /></div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">광고성 메시지 수신동의</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 복합형 -->
+
+                <!-- 알림톡 강조 유형 - 이미지형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      안녕하세요 택배입니다. 고객님이 주문하신 상품이 배송이 시작되었습니다. 상품을 안전하게 배송하도록 하겠습니다.<br />
+                      감사합니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">자세히 보기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 강조 유형 - 이미지형 -->
+
+                <!-- 알림톡 강조 유형 - 강조표기형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-sub">쿠폰안내</div>
+                      <div class="preview-message__inner-tit-main">더한섬 닷컴 쿠폰소명 안내</div>
+                    </div>
+
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+                      소멸예정쿠폰<br />
+                      - 쿠폰명 : 10% 특별쿠폰<br />
+                      - 유효기간 : 2022-02-09
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">쿠폰함 확인</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 강조표기형 -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(1.헤더적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-header">주문이 체결되었습니다.</div>
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(1.헤더적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(2.아이템 하이라이트 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-main">살롯의 거미</div>
+                      <div class="preview-message__inner-tit-sub">도서대출</div>
+                    </div>
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(2.아이템 하이라이트 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(3.이미지 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(3.이미지 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(4.이미지+헤더 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-header">주민이 체결되었습니다.</div>
+                    <div class="preview-message__inner-list-2">
+                      <p>대출도서관<span>라이언 도서관</span></p>
+                      <p>등록번호<span>A123432342423</span></p>
+                      <p>
+                        도서대출일<span><strong>2021년 06월 19일</strong></span>
+                      </p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(4.이미지+헤더 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(5.이미지+아이템 하이라이트 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-main">살롯의 거미</div>
+                      <div class="preview-message__inner-tit-sub">도서대출</div>
+                    </div>
+                    <div class="preview-message__inner-list-2">
+                      <p>대출도서관<span>라이언 도서관</span></p>
+                      <p>등록번호<span>A123432342423</span></p>
+                      <p>
+                        도서대출일<span><strong>2021년 06월 19일</strong></span>
+                      </p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(5.이미지+아이템 하이라이트 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(6.헤더+아이템 하이라이트 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-header">주문이 체결되었습니다.</div>
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-main">살롯의 거미</div>
+                      <div class="preview-message__inner-tit-sub">도서대출</div>
+                    </div>
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(6.헤더+아이템 하이라이트 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(7.이미지+헤더+아이템 하이라이트 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-header">주문이 체결되었습니다.</div>
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-main">살롯의 거미</div>
+                      <div class="preview-message__inner-tit-sub">도서대출</div>
+                    </div>
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(7.이미지+헤더+아이템 하이라이트 적용) -->
+              </div>
+            </div>
+
+            <div id="tab_5" class="preview-talk">
+              <div class="preview-inner mockup-scroll">
+                <!-- 알림톡 메시지 유형 - 기본형 -->
+                <div class="preview-message preview-message--active">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+
+                      소중한 주문이 접수완료 되었습니다.<br /><br />
+
+                      ▶구문일자 : 2021.05.01(토) 11:55<br />
+                      ▶금액 : 12,000원<br />
+                      ▶주문번호 : <a href="javascript:;">20210323-0002157</a>
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button" class="preview-message__button--channel"><span></span>채널추가</button>
+                    <button type="button">홈페이지 바로가기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 기본형 -->
+
+                <!-- 알림톡 메시지 유형 - 부가정보형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+
+                      소중한 주문이 접수완료 되었습니다.<br /><br />
+
+                      -구문일자 : 2021.05.01(토) 11:55<br />
+                      -금액 : 12,000원<br />
+                      -주문번호 : <a href="javascript:;">20210323-0002157</a>
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.<br />
+                      고객센터 : <a href="tel:02-1234-1234">02-1234-1234</a>
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">홈페이지 바로가기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 부가정보형 -->
+
+                <!-- 알림톡 메시지 유형 - 광고추가형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+
+                      소중한 주문이 접수완료 되었습니다.<br /><br />
+
+                      ▶구문일자 : 2021.05.01(토) 11:55<br />
+                      ▶금액 : 12,000원<br />
+                      ▶주문번호 : <a href="javascript:;">20210323-0002157</a>
+                    </div>
+                    <div class="preview-message__inner-cont advertising">
+                      아이투맥스의 광고와 마케팅 메시지를 카카오 톡으로 받아 볼 수 있습니다<br />
+                      고객센터 : <a href="tel:02-1234-1234">02-1234-1234</a>
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">광고성 메시지 수신동의</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 광고추가형 -->
+
+                <!-- 알림톡 메시지 유형 - 복합형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+
+                      소중한 주문이 접수완료 되었습니다.<br /><br />
+
+                      ▶구문일자 : 2021.05.01(토) 11:55<br />
+                      ▶금액 : 12,000원<br />
+                      ▶주문번호 : <a href="javascript:;">20210323-0002157</a>
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.<br />
+                      고객센터 : <a href="tel:02-1234-1234">02-1234-1234</a>
+                    </div>
+                    <div class="preview-message__inner-cont advertising">아래버튼을 누르시면 모바일 명세서 수신 고객대상 이벤트 페이지로 이동합니다.<br /></div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">광고성 메시지 수신동의</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 복합형 -->
+
+                <!-- 알림톡 강조 유형 - 이미지형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-cont">
+                      안녕하세요 택배입니다. 고객님이 주문하신 상품이 배송이 시작되었습니다. 상품을 안전하게 배송하도록 하겠습니다.<br />
+                      감사합니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">자세히 보기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 강조 유형 - 이미지형 -->
+
+                <!-- 알림톡 강조 유형 - 강조표기형 -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-sub">쿠폰안내</div>
+                      <div class="preview-message__inner-tit-main">더한섬 닷컴 쿠폰소명 안내</div>
+                    </div>
+
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요<br /><br />
+                      소멸예정쿠폰<br />
+                      - 쿠폰명 : 10% 특별쿠폰<br />
+                      - 유효기간 : 2022-02-09
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">쿠폰함 확인</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 강조표기형 -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(1.헤더적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-header">주문이 체결되었습니다.</div>
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(1.헤더적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(2.아이템 하이라이트 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-main">살롯의 거미</div>
+                      <div class="preview-message__inner-tit-sub">도서대출</div>
+                    </div>
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(2.아이템 하이라이트 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(3.이미지 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(3.이미지 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(4.이미지+헤더 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-header">주민이 체결되었습니다.</div>
+                    <div class="preview-message__inner-list-2">
+                      <p>대출도서관<span>라이언 도서관</span></p>
+                      <p>등록번호<span>A123432342423</span></p>
+                      <p>
+                        도서대출일<span><strong>2021년 06월 19일</strong></span>
+                      </p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(4.이미지+헤더 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(5.이미지+아이템 하이라이트 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-main">살롯의 거미</div>
+                      <div class="preview-message__inner-tit-sub">도서대출</div>
+                    </div>
+                    <div class="preview-message__inner-list-2">
+                      <p>대출도서관<span>라이언 도서관</span></p>
+                      <p>등록번호<span>A123432342423</span></p>
+                      <p>
+                        도서대출일<span><strong>2021년 06월 19일</strong></span>
+                      </p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(5.이미지+아이템 하이라이트 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(6.헤더+아이템 하이라이트 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-header">주문이 체결되었습니다.</div>
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-main">살롯의 거미</div>
+                      <div class="preview-message__inner-tit-sub">도서대출</div>
+                    </div>
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(6.헤더+아이템 하이라이트 적용) -->
+
+                <!-- 알림톡 강조 유형 - 아이템리스트(7.이미지+헤더+아이템 하이라이트 적용) -->
+                <div class="preview-message">
+                  <div class="preview-message__top">알림톡 도착</div>
+                  <div class="preview-message__inner-noticeimg">
+                    <img src="./img/img_sample_3.png" alt="배송안내 이미지" />
+                  </div>
+                  <div class="preview-message__inner">
+                    <div class="preview-message__inner-header">주문이 체결되었습니다.</div>
+                    <div class="preview-message__inner-tit">
+                      <div class="preview-message__inner-tit-main">살롯의 거미</div>
+                      <div class="preview-message__inner-tit-sub">도서대출</div>
+                    </div>
+                    <div class="preview-message__inner-list">
+                      <p><span>대출도서관</span>라이언 도서관</p>
+                      <p><span>등록번호</span>A123432342423</p>
+                      <p><span>도서대출일</span>2021년 06월 19일</p>
+                    </div>
+                    <div class="preview-message__inner-cont">
+                      아이투맥스 입니다.<br />
+                      라이언님, 안녕하세요
+                    </div>
+                    <div class="preview-message__inner-cont add">
+                      안전하게 배송하도록 하겠습니다.<br />
+                      상품취소시 취소규정에 따라 수수료가 부과될수 있습니다.
+                    </div>
+                  </div>
+                  <div class="preview-message__button">
+                    <button type="button">문의하기</button>
+                  </div>
+                </div>
+                <!-- //알림톡 메시지 유형 - 아이템리스트(7.이미지+헤더+아이템 하이라이트 적용) -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <strong>문자/카카오<br />메시지</strong>
+        <p>Version 0.0.1</p>
+        <nav>
+          <a href="javascript:;" class="nav__text1"><i></i><span>문자메시지</span></a>
+          <a href="javascript:;" class="nav__text2"><i></i><span>친구톡</span></a>
+          <a href="javascript:;" class="nav__text3 nav__text--active"><i></i><span>알림톡</span></a>
+          <a href="javascript:;" class="nav__text4"><i></i><span>예약현황</span></a>
+          <a href="javascript:;" class="nav__text5"><i></i><span>발송결과</span></a>
+          <div class="language">
+            <p>언어선택</p>
+            <select name="언어선택">
+              <option value="">국문</option>
+              <option value="">영문</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>

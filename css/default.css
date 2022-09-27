@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+:root {
+  /*main*/
+  --color-main01: #2B3B4D;
+  --color-main02: #06A59A;
+  --color-main03: #EBEEF4;
+  --color-main04: #D8DEEB;
+  --color-main05: #DDF1ED;
+  --color-main06: #FFE1E3;
+
+  /* Text / Sub */
+  --color-text01: #2C395B;
+  --color-text02: #38827B;
+  --color-text03: #818AA2;
+  --color-text04: #B2C6DD;  
+  --color-text05: #C2CAD3;
+  --color-text06: #FB6B6B;
+
+  /* button-BGcolor */
+  --button-default-BG: #ffffff;
+  --button-primary-BG: #06A59A;
+  --button-secondary-BG: #DDF1ED;
+  --button-negative-BG: #FFE1E3;
+
+  /* button-color */
+  --button-default-color: #06A59A;
+  --button-primary-color: #ffffff;
+  --button-secondary-color: #38827B;
+  --button-negative-color: #FB6B6B;
+
+/* border-color */
+  --border-default-color: #CCD1E1;
+  --border-primary-color:#2B6D66;
+  --border-secondary-color:#06A59A;
+  --border-negative-color:#FB6B6B;
+
+  /* button-font-size */
+  --button-font: 0.7rem;
+
+  /* button-padding */
+  --button-padding: 5px 5px 5px 5px;
+
+  /* button-radious */
+  --button-radius: 5px;
+
+  /* button-border */
+  --button-border: 1px solid #06A59A;
+
+  /* annimation */
+  --animation-duration: 300ms;
+}
+
+html {
+  font-family: 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+div,
+span,
+article,
+section,
+header,
+footer,
+aside,
+p,
+ul,
+li,
+fieldset,
+legend,
+label,
+a,
+nav,
+form {
+  box-sizing: border-box;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* H style */
+h1 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 14px;
+}
+h3 {
+  font-size: 12px;
+}
+h4 {
+  font-size: 11px;
+}
+h5 {
+  font-size: 10px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+* {
+  line-height: 1em;
+}
+
+/*clearFix*/
+.clearFix:before,
+.clearFix:after {
+  display: block;
+  content: '';
+  line-height: 0;
+}
+.clearFix:after {
+  clear: both;
+}
+
+/*button style*/
+button.default {
+  background: var(--button-default-BG);
+  color: var(--button-default-color);
+  font-size: var(--button-font);
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+}
+button.primary {
+  background: var(--button-primary-BG);
+  color: var(--button-primary-color);
+  font-size: var(--button-font);
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+}
+button.secondary {
+  background: var(--button-secondary-BG);
+  color: var(--button-secondary-color);
+  font-size: var(--button-font);
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+}
+button.negative {
+  background: var(--button-negative-BG);
+  color: var(--button-negative-color);
+  font-size: var(--button-font);
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+}
+
+/*table style*/
+table {
+  width: 100%;
+  border-top: 2px solid var(--color-blue-grey03);
+  border-bottom: 2px solid var(--color-blue-grey03);
+}
+table caption {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+}
+table tr {
+  border-bottom: 1px solid var(--color-blue-grey03);
+}
+table tr:last-child {
+  border-bottom: 0px solid var(--color-blue-grey03);
+}
+table tr th,
+table tr td {
+  line-height:15px;
+  padding:5px 10px;
+  text-align: left;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMMA&ITA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- JS -->
+    <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/layout.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <a style="position: absolute; top: 10px; left: 10px; padding: 15px" class="btn--default modal-open" href="#button-setting">모달 예시</a>
+
+      <div id="button-setting" class="modal">
+        <div class="modal-center">
+          <a href="#" title="Close" class="close modal-close"></a>
+          <p class="modal-title">버튼 설정/조회</p>
+          <div class="modal-center__inner scroll-custom">
+            <!--📍 code review 0524 (3) 친구톡 버튼 설정 항목 없을경우 #4-->
+            <section class="setting-wrap">
+              <div class="setting-wrap__select">
+                <label for="">버튼유형</label>
+                <select name="버튼유형">
+                  <option value="">선택</option>
+                  <option value="">웹링크</option>
+                  <option value="">앱링크</option>
+                  <option value="">봇키워드</option>
+                  <option value="">메시지 전달</option>
+                  <option value="">상담톡 전환</option>
+                  <option value="">봇 전환</option>
+                  <option value="">비즈니스 폼</option>
+                </select>
+              </div>
+              <div class="setting-wrap__input">
+                <label for="">버튼명 (최대 14자)</label>
+                <input type="text" id="" name="" placeholder="입력" />
+              </div>
+            </section>
+            <section class="setting-wrap">
+              <div class="setting-wrap__select">
+                <label for="">버튼유형</label>
+                <select name="버튼유형">
+                  <option value="">웹링크</option>
+                  <option value="">앱링크</option>
+                  <option value="">봇키워드</option>
+                  <option value="">메시지 전달</option>
+                  <option value="">상담톡 전환</option>
+                  <option value="">봇 전환</option>
+                  <option value="">비즈니스 폼</option>
+                </select>
+              </div>
+              <div class="setting-wrap__input">
+                <label for="">버튼명 (최대 14자)</label>
+                <input type="text" id="" name="" placeholder="입력" />
+              </div>
+              <div class="setting-wrap__input link">
+                <label for="">모바일 링크(필수)</label>
+                <!--📌 DEV Check(19) : select, input 선택 class="active" 추가 -->
+                <input type="text" id="" name="" placeholder="http://" class="active" />
+              </div>
+              <div class="setting-wrap__input link">
+                <label for="">PC 링크(선택)</label>
+                <input type="text" id="" name="" placeholder="http://" />
+              </div>
+              <button type="button" class="cont-btn__negative">삭제</button>
+            </section>
+            <section class="setting-wrap">
+              <div class="setting-wrap__select">
+                <label for="">버튼유형</label>
+                <select name="버튼유형">
+                  <option value="">앱링크</option>
+                  <option value="">웹링크</option>
+                  <option value="">봇키워드</option>
+                  <option value="">메시지 전달</option>
+                  <option value="">상담톡 전환</option>
+                  <option value="">봇 전환</option>
+                  <option value="">비즈니스 폼</option>
+                </select>
+              </div>
+              <div class="setting-wrap__input">
+                <label for="">버튼명 (최대 14자)</label>
+                <input type="text" id="" name="" placeholder="입력" />
+              </div>
+              <div class="setting-wrap__input link">
+                <label for="">Android Scheme</label>
+                <input type="text" id="" name="" placeholder="안드로이드 앱 링크" />
+              </div>
+              <div class="setting-wrap__input link">
+                <label for="">iOS Scheme</label>
+                <input type="text" id="" name="" placeholder="iOS 앱 링크" />
+              </div>
+              <button type="button" class="cont-btn__negative">삭제</button>
+            </section>
+            <section class="setting-wrap">
+              <div class="setting-wrap__select">
+                <label for="">버튼유형</label>
+                <select name="버튼유형">
+                  <option value="">봇키워드</option>
+                  <option value="">웹링크</option>
+                  <option value="">앱링크</option>
+                  <option value="">메시지 전달</option>
+                  <option value="">상담톡 전환</option>
+                  <option value="">봇 전환</option>
+                  <option value="">비즈니스 폼</option>
+                </select>
+              </div>
+              <div class="setting-wrap__input">
+                <label for="">버튼명 (최대 14자)</label>
+                <input type="text" id="" name="" placeholder="입력" />
+              </div>
+              <button type="button" class="cont-btn__negative">삭제</button>
+            </section>
+            <section class="setting-wrap">
+              <div class="setting-wrap__select">
+                <label for="">버튼유형</label>
+                <select name="버튼유형">
+                  <option value="">메시지 전달</option>
+                  <option value="">웹링크</option>
+                  <option value="">앱링크</option>
+                  <option value="">봇키워드</option>
+                  <option value="">상담톡 전환</option>
+                  <option value="">봇 전환</option>
+                  <option value="">비즈니스 폼</option>
+                </select>
+              </div>
+              <div class="setting-wrap__input">
+                <label for="">버튼명 (최대 14자)</label>
+                <input type="text" id="" name="" placeholder="입력" />
+              </div>
+              <button type="button" class="cont-btn__negative">삭제</button>
+            </section>
+            <section class="setting-wrap">
+              <div class="setting-wrap__select">
+                <label for="">버튼유형</label>
+                <select name="버튼유형">
+                  <option value="">상담톡 전환</option>
+                  <option value="">웹링크</option>
+                  <option value="">앱링크</option>
+                  <option value="">봇키워드</option>
+                  <option value="">메시지 전달</option>
+                  <option value="">봇 전환</option>
+                  <option value="">비즈니스 폼</option>
+                </select>
+              </div>
+              <div class="setting-wrap__input">
+                <label for="">버튼명 (최대 14자)</label>
+                <input type="text" id="" name="" placeholder="입력" />
+                <span>*상담톡 이용 카카오톡 채널만 이용가능</span>
+              </div>
+              <button type="button" class="cont-btn__negative">삭제</button>
+            </section>
+            <section class="setting-wrap">
+              <div class="setting-wrap__select">
+                <label for="">버튼유형</label>
+                <select name="버튼유형">
+                  <option value="">봇 전환</option>
+                  <option value="">웹링크</option>
+                  <option value="">앱링크</option>
+                  <option value="">봇키워드</option>
+                  <option value="">메시지 전달</option>
+                  <option value="">상담톡 전환</option>
+                  <option value="">비즈니스 폼</option>
+                </select>
+              </div>
+              <div class="setting-wrap__input">
+                <label for="">버튼명 (최대 14자)</label>
+                <input type="text" id="" name="" placeholder="입력" />
+                <span>*카카오 i오픈빌더를 이용하는 카카오톡 채널만 이용가능</span>
+              </div>
+              <button type="button" class="cont-btn__negative">삭제</button>
+            </section>
+            <section class="setting-wrap">
+              <div class="setting-wrap__select">
+                <label for="">버튼유형</label>
+                <select name="버튼유형">
+                  <option value="">비즈니스 폼</option>
+                  <option value="">웹링크</option>
+                  <option value="">앱링크</option>
+                  <option value="">봇키워드</option>
+                  <option value="">메시지 전달</option>
+                  <option value="">상담톡 전환</option>
+                  <option value="">봇 전환</option>
+                </select>
+              </div>
+              <div class="setting-wrap__select">
+                <label for="">버튼명 선택</label>
+                <select name="선택">
+                  <option value="">선택</option>
+                  <option value="">톡에서 설문하기</option>
+                  <option value="">톡에서 응모하기</option>
+                  <option value="">톡에서 예약하기</option>
+                  <option value="">톡에서 시승신청</option>
+                  <option value="">톡에서 참여하기</option>
+                </select>
+              </div>
+              <div class="file file-show">
+                <label for="file"><i></i>파일 업로드</label>
+                <div class="file__input">
+                  <input type="file" id="file" />
+                  <input type="text" value="" placeholder="비즈니스폼 불러오기" disabled="" />
+                </div>
+              </div>
+              <button type="button" class="cont-btn__negative">삭제</button>
+            </section>
+          </div>
+          <div class="variable-add">
+            <h3>변수값 추가</h3>
+            <div class="variable-add__title">
+              <i class="variable-add__arrow"></i>
+              <span class="variable-add__show">저장된 변수값 확인</span>
+              <span class="variable-add__hidden">저장된 변수값 닫기</span>
+            </div>
+            <div class="variable-add__info">*입력할 위치에 마우스 클릭 후, 변수버튼을 클릭하면 삽입이 됩니다<br />(버튼명은 제외)</div>
+            <div class="customer-setting scroll-custom">
+              <ul>
+                <li>#{LABEL3}<i></i></li>
+                <li>#{TestYn} <i></i></li>
+                <li>#{ContactKey}<i></i></li>
+                <li>#{LABEL4}<i></i></li>
+                <li>#{URL_TestYn}<i></i></li>
+                <li>#{URL_TestYn}<i></i></li>
+              </ul>
+            </div>
+            <div class="variable-add__btn">
+              <button type="button" class="variable-add__btn--add">버튼추가<i></i></button>
+              <button type="button" class="variable-add__btn--confirm">버튼적용</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <strong>문자/카카오<br />메시지</strong>
+        <p>Version 0.0.1</p>
+        <nav>
+          <a href="javascript:;" class="nav__text1"><i></i><span>문자메시지</span></a>
+          <a href="javascript:;" class="nav__text2 nav__text--active"><i></i><span>친구톡</span></a>
+          <a href="javascript:;" class="nav__text3"><i></i><span>알림톡</span></a>
+          <a href="javascript:;" class="nav__text4"><i></i><span>예약현황</span></a>
+          <a href="javascript:;" class="nav__text5"><i></i><span>발송결과</span></a>
+          <div class="language">
+            <p>언어선택</p>
+            <select name="언어선택">
+              <option value="">국문</option>
+              <option value="">영문</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>

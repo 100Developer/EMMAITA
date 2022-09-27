@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMMA&ITA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- JS -->
+    <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/layout.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <a style="position: absolute; top: 10px; left: 10px; padding: 15px" class="btn--default modal-open" href="#replace-send">모달 예시</a>
+
+      <div id="replace-send" class="modal">
+        <div class="modal-center">
+          <a href="#" title="Close" class="close modal-close"></a>
+          <p class="modal-title">대체발송 설정</p>
+
+          <div class="modal-center__replace scroll-custom">
+            <!--📍 code review 0524 (4) 대체 발송, 발신번호, 수신거부 번호 최상단 이동 #5-->
+            <div class="select-wrap exception">
+              <div class="select-wrap__select">
+                <label for="">발신번호</label>
+                <select name="발신번호">
+                  <option value="">선택</option>
+                  <option value="">02-1234-5678</option>
+                </select>
+              </div>
+              <div class="select-wrap__select">
+                <label for="">수신거부번호</label>
+                <select name="수신거부번호">
+                  <option value="">선택</option>
+                  <option value="">02-1234-5678</option>
+                </select>
+              </div>
+            </div>
+            <p class="section-title">메시지 설정</p>
+            <div class="messege-setting">
+              <a href="javascript:;" data-type="tab_1" class="messege-setting__item--active">SMS</a>
+              <a href="javascript:;" data-type="tab_2" class="">LMS</a>
+              <a href="javascript:;" data-type="tab_3" class="">MMS</a>
+            </div>
+            <section>
+              <div id="tab_1" class="tab tab--active">
+                <div class="tab__switch">
+                  <span>광고성 여부</span>
+                  <label><input type="checkbox" /><i></i></label>
+                </div>
+                <input type="text" id="" name="" class="tab__input" placeholder="메시지 제목(LMS·MMS용, 최대 30자)" disabled />
+                <div class="tab__textarea">
+                  <textarea placeholder="90bytes 초과시 LMS로 전환됩니다."></textarea>
+                  <strong>SMS</strong>
+                  <p><em>0</em>/90bytes</p>
+                </div>
+                <div class="tab__btn">
+                  <button type="button" class="tab__btn--refresh"><i></i>내용 초기화</button>
+                  <button type="button" class="tab__btn--load-message"><i></i>메시지 불러오기</button>
+                </div>
+              </div>
+              <div id="tab_2" class="tab">
+                <div class="tab__switch">
+                  <span>광고성 여부</span>
+                  <label><input type="checkbox" checked /><i></i></label>
+                </div>
+                <input type="text" id="" name="" class="tab__input" placeholder="메시지 제목(LMS·MMS용, 최대 30자)" />
+                <div class="tab__textarea">
+                  <textarea placeholder="90bytes 초과시 LMS로 전환됩니다.">
+(광고)
+무료수신거부 0803003287
+                  </textarea>
+                  <strong>LMS</strong>
+                  <p><em>0</em>/2000bytes</p>
+                </div>
+                <div class="tab__btn">
+                  <button type="button" class="tab__btn--refresh"><i></i>내용 초기화</button>
+                  <button type="button" class="tab__btn--load-message"><i></i>메시지 불러오기</button>
+                </div>
+              </div>
+              <div id="tab_3" class="tab">
+                <div class="tab__switch checked">
+                  <span>광고성 여부</span>
+                  <label><input type="checkbox" checked /><i></i></label>
+                </div>
+                <input type="text" id="" name="" class="tab__input" placeholder="메시지 제목(LMS·MMS용, 최대 30자)" />
+                <div class="tab__textarea">
+                  <textarea placeholder="90bytes 초과시 LMS로 전환됩니다.">
+(광고)
+무료수신거부 0803003287
+                  </textarea>
+                  <strong>MMS</strong>
+                  <p><em>0</em>/2000bytes</p>
+                </div>
+                <div class="tab__btn">
+                  <button type="button" class="tab__btn--refresh"><i></i>내용 초기화</button>
+                  <button type="button" class="tab__btn--load-message"><i></i>메시지 불러오기</button>
+                </div>
+              </div>
+              <hr />
+              <div class="file">
+                <p>이미지 첨부 <span>*MMS발송으로 전환됩니다.</span></p>
+                <label for="file"><i></i>불러오기</label>
+                <button type="button" class="file__btn--upload"><i></i>등록하기</button>
+                <div class="file__input">
+                  <input type="file" id="file" />
+                  <input type="text" value="" />
+                  <button type="button" class="file__input__delete"></button>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="customer-setting">
+                <p class="customer-setting__text">고객설정</p>
+                <ul>
+                  <li>#{통합고객번호} <i></i></li>
+                  <li>#{세그먼트사용법일련번호} <i></i></li>
+                  <li>#{사번}<i></i></li>
+                  <li>#{고객명}<i></i></li>
+                </ul>
+              </div>
+            </section>
+            
+            <div class="cont-btn">
+              <button type="button" class="cont-btn__negative">취소</button>
+              <button type="button" class="cont-btn__confirm">등록</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <strong>문자/카카오<br />메시지</strong>
+        <p>Version 0.0.1</p>
+        <nav>
+          <a href="javascript:;" class="nav__text1"><i></i><span>문자메시지</span></a>
+          <a href="javascript:;" class="nav__text2 nav__text--active"><i></i><span>친구톡</span></a>
+          <a href="javascript:;" class="nav__text3"><i></i><span>알림톡</span></a>
+          <a href="javascript:;" class="nav__text4"><i></i><span>예약현황</span></a>
+          <a href="javascript:;" class="nav__text5"><i></i><span>발송결과</span></a>
+          <div class="language">
+            <p>언어선택</p>
+            <select name="언어선택">
+              <option value="">국문</option>
+              <option value="">영문</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>

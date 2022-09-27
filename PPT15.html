@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMMA&ITA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- JS -->
+    <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/layout.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <a style="position: absolute; top: 10px; left: 10px; padding: 15px" class="btn--default modal-open" href="#img-list">모달 예시</a>
+
+      <div id="img-list" class="modal">
+        <div class="modal-center gallery">
+          <a href="#" title="Close" class="close modal-close"></a>
+          <p class="modal-title">이미지 목록</p>
+          <div class="table-top">
+            <div class="table-top__count">총<strong>26,317개</strong></div>
+            <div class="table-top__search">
+                <span>
+                  <input type="text" class="input_hidden" placeholder="이미지명 검색" />
+                  <button type="button"></button>
+                </span>
+            </div>
+          </div>
+          <div class="modal-center__cont-wrap scroll-custom">          
+            <div class="image-list__inner">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <label class="control control--checkbox">
+                      <input type="checkbox" checked>
+                      <div class="control__indicator"></div>
+                    </label>
+                    <div class="image-list__img">
+                      <img src="./img/img_sample_1.jpg" alt="연말등 날리기 이미지">
+                      <div class="image-list__img__mask"><span>추가</span></div>
+                    </div>
+                    <div class="image-list__text">
+                      <h3 class="image-list__title">연말등 날리기 이미지 </h3>
+                      <p><span>사이즈</span>720*720px</p>
+                      <p><span>등록일</span>2022.04.05</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <label class="control control--checkbox">
+                      <input type="checkbox">
+                      <div class="control__indicator"></div>
+                    </label>
+                    <div class="image-list__img">
+                      <img src="./img/img_sample_2.png" alt="크리스마스 트리">
+                      <div class="image-list__img__mask"><span>추가</span></div>
+                    </div>
+                    <div class="image-list__text">
+                      <h3>크리스마스 트리</h3>
+                      <p><span>사이즈</span>800*600px</p>
+                      <p><span>등록일</span>2022.04.05</p>
+                    </div>
+                  </a>
+                </li>
+                  <li>
+                  <a href="javascript:;">
+                    <label class="control control--checkbox">
+                      <input type="checkbox">
+                      <div class="control__indicator"></div>
+                    </label>
+                    <div class="image-list__img">
+                      <img src="./img/img_sample_2.png" alt="크리스마스 트리">
+                      <div class="image-list__img__mask"><span>추가</span></div>
+                    </div>
+                    <div class="image-list__text">
+                      <h3>크리스마스 트리</h3>
+                      <p><span>사이즈</span>800*600px</p>
+                      <p><span>등록일</span>2022.04.05</p>
+                    </div>
+                  </a>
+                </li>
+                  <li>
+                  <a href="javascript:;">
+                    <label class="control control--checkbox">
+                      <input type="checkbox">
+                      <div class="control__indicator"></div>
+                    </label>
+                    <div class="image-list__img">
+                      <img src="./img/img_sample_2.png" alt="크리스마스 트리">
+                      <div class="image-list__img__mask"><span>추가</span></div>
+                    </div>
+                    <div class="image-list__text">
+                      <h3>크리스마스 트리</h3>
+                      <p><span>사이즈</span>800*600px</p>
+                      <p><span>등록일</span>2022.04.05</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="table-pagination">
+              <ul>
+                <li class="table-pagination__first table-pagination__arrow--disable">
+                  <a href="javascript:;"></a>
+                </li>
+                <li class="table-pagination__prev table-pagination__arrow--disable">
+                  <a href="javascript:;"></a>
+                </li>
+                <li class="table-pagination--active">
+                  <a href="javascript:;">01</a>
+                </li>
+                <li>
+                  <a href="javascript:;">02</a>
+                </li>
+                <li>
+                  <a href="javascript:;">03</a>
+                </li>
+                <li>
+                  <a href="javascript:;">04</a>
+                </li>
+                <li>
+                  <a href="javascript:;">05</a>
+                </li>
+                <li class="table-pagination__next">
+                  <a href="javascript:;"></a>
+                </li>
+                <li class="table-pagination__last">
+                  <a href="javascript:;"></a>
+                </li>
+              </ul>
+            </div>
+          </div>           
+          <div class="table-bottom">
+            <button type="button" class="table-bottom__negative">삭제</button>            
+            <button type="button" class="table-bottom__confirm">등록</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <strong>문자/카카오<br />메시지</strong>
+        <p>Version 0.0.1</p>
+        <nav>
+          <a href="javascript:;" class="nav__text1 nav__text--active"><i></i><span>문자메시지</span></a>
+          <a href="javascript:;" class="nav__text2"><i></i><span>친구톡</span></a>
+          <a href="javascript:;" class="nav__text3"><i></i><span>알림톡</span></a>
+          <a href="javascript:;" class="nav__text4"><i></i><span>예약현황</span></a>
+          <a href="javascript:;" class="nav__text5"><i></i><span>발송결과</span></a>
+          <div class="language">
+            <p>언어선택</p>
+            <select name="언어선택">
+              <option value="">국문</option>
+              <option value="">영문</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>
